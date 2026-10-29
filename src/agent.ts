@@ -1,5 +1,4 @@
 import type Anthropic from "@anthropic-ai/sdk";
-import { z } from "zod";
 import { ToolDeniedError, TruncatedResponseError, UnknownToolError } from "./errors.js";
 import type { Tool } from "./tool.js";
 import { addUsage, emptyUsage, type Usage } from "./usage.js";
@@ -141,5 +140,3 @@ export class Agent {
     };
   }
 }
-
-export { z as _zodForTypes };
